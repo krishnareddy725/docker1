@@ -31,6 +31,26 @@ docker rm -f containerid == to remove the container with out stoping.
 docker run -d -p 8080:80 nginx == To run container on 8080 port, we can access this nginx
                                   serverip:8080 in google browser.
 
- 
+docker run -d -p 8081:80 --name krishna_docker nginx == to provide own name to container, 
+                  it is unique, dont give same name to other containers.
+
+docker exec -it containerid bash/ksh == to login to the container
+            exec == execution
+            i == input
+            t == terminal
+            cat /etc/*release == to check the container OS.
+            exit == to come out of the container.
+
+docker inspect dockerid|grep -i "IPAddress" == To know the ipaddress of the docker.
+
+
+
+CREATING OUR OWN IMAGE BY DOCKER FILES
+---------------------------------------
+
+
+
+
+
 
 
