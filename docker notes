@@ -1,1 +1,36 @@
-docker installation commands
+lenlk8smastert01/10.238.0.13 == test server to practice the docker and kubernets.
+
+docker pull nginx == it will pull latest images from docker hub.
+
+docker images == to see downloaded images in server
+
+docker rmi imagesname == to delte the image
+
+docker create nginx:latest == to create the container 
+
+docker ps -a == to see all containers which are in all states(running/exited)
+
+docker start containerid == once created the container to bring to running state
+
+docker ps == to see the containers only in running state.
+
+docker rm containerid == to delete the container
+
+docker images -a -q == it will display all images image id.
+
+docker rmi 'docker images -a -q' == to remove all images at a time.
+
+docker run nginx == this command will docker images from docker hub and create nginx 
+                    container. but it is running and attach to the screen, 
+                    ctrl+c == is the command to exit from the container.
+
+docker run -d nginx == to send the container in background and not attach to screen.
+
+docker rm -f containerid == to remove the container with out stoping.
+
+docker run -d -p 8080:80 nginx == To run container on 8080 port, we can access this nginx
+                                  serverip:8080 in google browser.
+
+ 
+
+
