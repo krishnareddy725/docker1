@@ -47,6 +47,27 @@ docker inspect dockerid|grep -i "IPAddress" == To know the ipaddress of the dock
 
 CREATING OUR OWN IMAGE BY DOCKER FILES
 ---------------------------------------
+docker build -t <url>/<username>/<image:version> . == To build the docker image and push   to repositary.
+    url == After building the docker image we push to harber, ECR( AWS Elastic container registery,) etc....
+    username == username
+    IMAGE:version = Image:version
+    . == dot means current directory it have Dockerfile
+
+Note: where the Dockerfile is there, there only we needs to "docker build" and "docker run"
+commands.
+
+SINARIO: Create a docker file and push to docker hub
+--------------------------------------------------------
+docker build -t from:v1 . == To build docker image.
+
+docker tag from:v1 krishna/from:v1 == To push the docker image we needs to retag it.
+
+docker login == login to docker and suppy username and password.
+
+
+
+
+
 
 
 
