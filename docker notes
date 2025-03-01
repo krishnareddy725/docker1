@@ -64,7 +64,7 @@ docker tag from:v1 krishna/from:v1 == To push the docker image we needs to retag
 
 docker login == login to docker and suppy username and password.
 
-
+docker push image:version url/username/image:version == To push the image to docker hub.
 
 
 
